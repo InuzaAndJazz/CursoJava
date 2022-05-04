@@ -2,10 +2,11 @@
 public class Main {
 
 	public static void main(String[] args) {
-		int edadActual = 28;
-		int fechaActual = 2022;
+		double largo = 2;
+		double ancho = 3;
 
-		System.out.println("Tú naciste en " + (fechaActual - edadActual));
+		System.out.println("El area del rectangulo es " + (largo * ancho));
+		System.out.println("El perimetro del rectangulo es " + (largo*2 + ancho*2));
 	}
 
 }
