@@ -5,16 +5,13 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner lector = new Scanner(System.in);
 		
-		System.out.println("Ingresa el largo del rectangulo: ");
-		String lineaLeida = lector.nextLine();
-		double largo = Double.parseDouble(lineaLeida);
+		System.out.println("Ingresa tu edad actual: ");
+		int edadUsuario = lector.nextInt();
 		
-		System.out.println("Ingresa el ancho del rectangulo: ");
-		lineaLeida = lector.nextLine();
-		double ancho = Double.parseDouble(lineaLeida);
-
-		System.out.println("El area del rectangulo es " + (largo * ancho));
-		System.out.println("El perimetro del rectangulo es " + (largo*2 + ancho*2));
+		System.out.println("Ingresa la edad de tu madre: ");
+		int edadMadre = lector.nextInt();
+		
+		System.out.println("La edad de tu madre cuando naciste era de "+(edadMadre-edadUsuario)+ " años");
 	}
 
 }
