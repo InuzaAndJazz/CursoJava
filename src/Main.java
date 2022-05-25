@@ -2,16 +2,50 @@ import java.util.Scanner;
 
 public class Main {
 
+	// if, else, else if, switch -> Comparador (*comparacion*) { *codigo a ejecutar*
+	// }
+	/*
+	 * comparadores numericos == == Igualdad < menor > mayor >= mayor o igual <
+	 * menor o igual != diferente
+	 */
+
 	public static void main(String[] args) {
-		Scanner lector = new Scanner(System.in);
-		
-		System.out.println("Ingresa tu edad actual: ");
-		int edadUsuario = lector.nextInt();
-		
-		System.out.println("Ingresa la edad de tu madre: ");
-		int edadMadre = lector.nextInt();
-		
-		System.out.println("La edad de tu madre cuando naciste era de "+(edadMadre-edadUsuario)+ " años");
+		String pais = "iaoshfioh";
+
+//		if (pais.equals("Chile")) {
+//			System.out.println("Wena wn");
+//		} else if (pais.equals("EEUU")) {
+//			System.out.println("Hello");
+//		} else if (pais.equals("Argentina")) {
+//			System.out.println("Hola Boludo");
+//		} else if (pais.equals("España")) {
+//			System.out.println("Hola cabron");
+//		} else {
+//			System.out.println("Hola");
+//		}
+
+		switch (pais) {
+		case "Chile": {
+			System.out.println("Wena wn");
+			break;
+		}
+		case "EEUU": {
+			System.out.println("Hello");
+			break;
+		}
+		case "Argentina": {
+			System.out.println("Hola Boludo");
+			break;
+		}
+		case "España": {
+			System.out.println("Hola Cabrón");
+			break;
+		}
+		default:{
+			System.out.println("Hola");
+			break;
+		}
+		}
 	}
 
 }
