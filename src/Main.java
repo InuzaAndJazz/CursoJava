@@ -1,51 +1,21 @@
-import java.util.Scanner;
-
 public class Main {
 
-	// if, else, else if, switch -> Comparador (*comparacion*) { *codigo a ejecutar*
-	// }
-	/*
-	 * comparadores numericos == == Igualdad < menor > mayor >= mayor o igual <
-	 * menor o igual != diferente
-	 */
-
 	public static void main(String[] args) {
-		String pais = "iaoshfioh";
 
-//		if (pais.equals("Chile")) {
-//			System.out.println("Wena wn");
-//		} else if (pais.equals("EEUU")) {
-//			System.out.println("Hello");
-//		} else if (pais.equals("Argentina")) {
-//			System.out.println("Hola Boludo");
-//		} else if (pais.equals("España")) {
-//			System.out.println("Hola cabron");
-//		} else {
-//			System.out.println("Hola");
-//		}
+		// while y for
+		/*int a = 0;
+		while (a < 10) {
+			System.out.println("a es igual a: " + a);
+			a++; // es igual a escribir [a = a + 1;]
+		}
+		*/
+		
+		//for (declaración de variable ; condicion ; sentencia al final de cada loop)
 
-		switch (pais) {
-		case "Chile": {
-			System.out.println("Wena wn");
-			break;
+		for (int a = 0; a < 10; a++) {
+			System.out.println("a es igual a: " + a);
 		}
-		case "EEUU": {
-			System.out.println("Hello");
-			break;
-		}
-		case "Argentina": {
-			System.out.println("Hola Boludo");
-			break;
-		}
-		case "España": {
-			System.out.println("Hola Cabrón");
-			break;
-		}
-		default:{
-			System.out.println("Hola");
-			break;
-		}
-		}
+		System.out.println("El ciclo terminó");
 	}
 
 }
